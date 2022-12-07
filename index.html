@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-top-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="animate.css"/>
+    <script rel="stylesheet" src="wow.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <link rel="stylesheet" href="gallery.css"/>
+    <title>Abito Theme Demo</title>
+</head>
+
+<body>
+    <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark" style="position:fixed;top:0;z-index:4;">
+        <a class="navbar-brand" href="#"><img src="white-logo.png" alt="ābito" height="33px"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Home
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">CREATIVE GRID</a>
+                        <a class="dropdown-item" href="#">MASONRY GRID</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        POSTS
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Example 1</a>
+                        <a class="dropdown-item" href="#">Example 2</a>
+                        <a class="dropdown-item" href="#">Example 3</a>
+                        <a class="dropdown-item" href="#">Example 4</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FIND US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="top-bg container-fluid">
+        <div class="color-overlay"></div>
+        <div class="top">
+            <h1 id="demo"></h1>	
+        </div>
+    </div>
+    <div class="tab-content">
+        <div id="menu1" class="tab-pane active">
+            <br>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img()" onmouseout="img_close()" style="animation-duration:2s;">
+                            <img class="img-fluid" src="1.jpg" alt="Unsplash"/>
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="img()" onmouseout="img_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>But when you get music and words together, that can be a very powerful thing.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 4 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img" class="details-btn" onmouseover="img()" onmouseout="img_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo-r" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img_r()" onmouseout="img_r_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="2.jpg" alt="Unsplash"/>
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="img_r()" onmouseout="img_r_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Wherever you go,go with all your heart.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 2 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img-r" class="details-btn1" onmouseover="img_r()" onmouseout="img_r_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo1" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img1()" onmouseout="img1_close()" style="animation-duration:2s;">
+                            <img class="img-fluid" src="3.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="img1()" onmouseout="img1_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>The early bird gets the worm,but the second mouse gets the cheese.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img1" class="details-btn" onmouseover="img1()" onmouseout="img1_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo_r1" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img_r1()" onmouseout="img_r1_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="4.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="img_r1()" onmouseout="img_r1_close()" style="animation-delay:0.2s;animation-duration:2s;background:transparent;">
+                            <h3>The world is a book and those who do not travel read only one page</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img_r1" class="details-btn1" onmouseover="img_r1()" onmouseout="img_r1_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 or -->
+            <!--Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo2" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img2()" onmouseout="img2_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="5.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="img2()" onmouseout="img2_close()" style="animation-delay:0.2s;animation-duration:2s;background:#fff;">
+                            <h3>Live, travel, adventure, bless, and don't be sorry.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img2" class="details-btn" onmouseover="img2()" onmouseout="img2_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo-r2" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img_r2()" onmouseout="img_r2_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="6.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="img_r2()" onmouseout="img_r2_close()" style="animation-delay:0.2s;animation-duration:2s;background:transparent;">
+                            <h3>I love my iPhone; it's great to have a camera around all the time.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">July 30 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img-r2" class="details-btn1" onmouseover="img_r2()" onmouseout="img_r2_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo3" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img3()" onmouseout="img3_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="7.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="img3()" onmouseout="img3_close()" style="animation-delay:0.2s;background:#fff;animation-duration:2s;">
+                            <h3>I'm not a vegetarian because I love animals, I'm a vegetarian because I hate plants.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 4 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img3" class="details-btn" onmouseover="img3()" onmouseout="img3_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo_r3" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img_r3()" onmouseout="img_r3_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="8.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="img_r3()" onmouseout="img_r3_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>No winter lasts forever; no spring skips its turn.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 2 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img_r3" class="details-btn1" onmouseover="img_r3()" onmouseout="img_r3_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 or -->
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo4" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img4()" onmouseout="img4_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="9.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="img4()" onmouseout="img4_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Food for the  body is not enough.There must be food for the soul.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">July 7 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img4" class="details-btn" onmouseover="img4()" onmouseout="img4_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgo_r4" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="img_r4()" onmouseout="img_r4_close()" style="float:right;">
+                            <img class="img-fluid" src="10.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="img_r4()" onmouseout="img_r4_close()" style="animation-delay:0.2s;background:transparent;">
+                            <h3>Lorem Ipsum Dolor Sit Amet, consectetur adipiscing</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">July 7 , 2015</time>
+					</span>
+                        </div>
+                        <div id="img_r4" class="details-btn1" onmouseover="img_r4()" onmouseout="img_r4_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--     DUSRA PAGE START HO GA  -->
+
+        <div id="menu2" class="tab-pane fade">
+            <br>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga()" onmouseout="imga_close()" style="animation-duration:2s;">
+                            <img class="img-fluid" src="11.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="imga()" onmouseout="imga_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Minds are like flowers, they only open when the time is right.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 4 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga" class="details-btn" onmouseover="imga()" onmouseout="imga_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa-r" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga_r()" onmouseout="imga_r_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="12.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="imga_r()" onmouseout="imga_r_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Live, travel, adventure, bless, and don’t be sorry.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 2 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga-r" class="details-btn1" onmouseover="imga_r()" onmouseout="imga_r_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa1" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga1()" onmouseout="imga1_close()" style="animation-duration:2s;">
+                            <img class="img-fluid" src="13.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="imga1()" onmouseout="imga1_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Lorem Ipsum Dolor Sit Amet, consectetur adipiscing</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga1" class="details-btn" onmouseover="imga1()" onmouseout="imga1_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa_r1" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga_r1()" onmouseout="imga_r1_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="14.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="imga_r1()" onmouseout="imga_r1_close()" style="animation-delay:0.2s;animation-duration:2s;background:transparent;">
+                            <h3>Minds are like flowers, they only open when the time is right.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga_r1" class="details-btn1" onmouseover="imga_r1()" onmouseout="imga_r1_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 or -->
+            <!--Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa2" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga2()" onmouseout="imga2_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="15.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="imga2()" onmouseout="imga2_close()" style="animation-delay:0.2s;animation-duration:2s;background:#fff;">
+                            <h3>Lorem Ipsum Dolor Sit Amet, consectetur adipiscing</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 1 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga2" class="details-btn" onmouseover="imga2()" onmouseout="imga2_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa-r2" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga_r2()" onmouseout="imga_r2_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="16.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="imga_r2()" onmouseout="imga_r2_close()" style="animation-delay:0.2s;animation-duration:2s;background:transparent;">
+                            <h3>Lorem Ipsum Dolor Sit Amet, consectetur adipiscing</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">July 30 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga-r2" class="details-btn1" onmouseover="imga_r2()" onmouseout="imga_r2_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa3" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga3()" onmouseout="imga3_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="11.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="imga3()" onmouseout="imga3_close()" style="animation-delay:0.2s;background:#fff;animation-duration:2s;">
+                            <h3>Minds are like flowers, they only open when the time is right.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">Aug 4 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga3" class="details-btn" onmouseover="imga3()" onmouseout="imga3_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa_r3" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga_r3()" onmouseout="imga_r3_close()" style="float:right;animation-duration:2s;">
+                            <img class="img-fluid" src="8.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="imga_r3()" onmouseout="imga_r3_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>Lorem Ipsum Dolor Sit Amet, consectetur adipiscing</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">Aug 2 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga_r3" class="details-btn1" onmouseover="imga_r3()" onmouseout="imga_r3_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 or -->
+            <!-- Left Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa4" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga4()" onmouseout="imga4_close()" style="animation-duration:2s;animation-duration:2s;">
+                            <img class="img-fluid" src="3.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info wow slideInUp" onmouseover="imga4()" onmouseout="imga4_close()" style="animation-delay:0.2s;animation-duration:2s;">
+                            <h3>The early bird gets the worm, but the second mouse gets the cheese.</h3>
+                            <span class="float-right mt-1">
+						<time class="date-post">July 7 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga4" class="details-btn" onmouseover="imga4()" onmouseout="imga4_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="container-fluid div1 px-5">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3 col-0"></div>
+                    <div class="col-lg-6 col-sm-9 col-12 item">
+                        <div id="imgoa_r4" class="col-lg-8 col-sm-9 col-10 wow slideInUp" onmouseover="imga_r4()" onmouseout="imga_r4_close()" style="float:right;">
+                            <img class="img-fluid" src="1.jpg" alt="Unsplash">
+                        </div>
+                        <div class="col-lg-7 col-sm-7 col-7 info-r wow slideInUp" onmouseover="imga_r4()" onmouseout="imga_r4_close()" style="animation-delay:0.2s;background:transparent;">
+                            <h3>Minds are like flowers, they only open when the time is right.</h3>
+                            <span class="float-left mt-1">
+						<time class="date-post">July 7 , 2015</time>
+					</span>
+                        </div>
+                        <div id="imga_r4" class="details-btn1" onmouseover="imga_r4()" onmouseout="imga_r4_close()">
+                            <span class="rel dropdown">MORE &nbsp; &nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid pages">
+        <ul class="nav nav-pills" role="tablist" style="justify-content:center">
+            <li class="nav-item">
+                <a id="up1" class="nav-link active" data-toggle="pill" href="#menu1">1</a>
+            </li>
+            <li class="nav-item">
+                <a id="up2" class="nav-link" data-toggle="pill" href="#menu2">2</a>
+            </li>
+        </ul>
+
+    </div>
+	<footer class="container-fluid myfoot">
+		<section class="foot-top-side">
+			<h4 class="foot-top-title">ābito</h4>
+			<div class="foot-top-content">
+				<div class="foot-content-left">
+					<div class="foot-description">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+					<div class="footer-menu ml-auto">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FIND US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CONTACT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">DOWNLOAD NOW!</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="social-links">
+					<ul>
+					<li>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					</li>
+					</ul>
+				</div>
+		</section>
+	</footer>
+   <script src="new 1.js"></script>
+</body>
+
+</html>
